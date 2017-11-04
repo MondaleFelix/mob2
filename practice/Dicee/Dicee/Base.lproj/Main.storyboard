@@ -47,6 +47,9 @@
                                 <state key="normal" title="Roll">
                                     <color key="titleColor" red="0.99222642183303833" green="0.99613159894943237" blue="0.99170535802841187" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="rollButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uwN-fA-xvD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
