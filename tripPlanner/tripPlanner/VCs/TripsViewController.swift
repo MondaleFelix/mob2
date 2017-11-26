@@ -20,6 +20,8 @@ class TripsViewController : UIViewController{
     
     func handleReponse(trips: [Trip]) -> Void {
         DispatchQueue.main.async {
+            
+            
             // Set datasource
             // Reload table view
         }
