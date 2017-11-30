@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/Mac/code/makeSchool/mob2/tripPlanner/tripPlanner/Main.storyboard">
+   </FileRef>
+   <FileRef
       location = "self:tripPlanner.xcodeproj">
    </FileRef>
 </Workspace>
