@@ -63,4 +63,7 @@ extension TripsViewController: UITableViewDataSource{
     }
 }
 
+extension TripsViewController: UITableViewDelegate {
+    
+}
 
