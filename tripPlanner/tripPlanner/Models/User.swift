@@ -22,6 +22,10 @@ class User: Codable {
         self.authHeader = "Basic \(base64LoginString)"
     }
     
+    enum UserKeys : String, CodingKey{
+        case username
+        case password
+    }
 
 }
 
