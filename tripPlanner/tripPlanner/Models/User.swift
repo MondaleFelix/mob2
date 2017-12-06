@@ -27,6 +27,13 @@ class User: Codable {
         case password
     }
 
+    func encode(to encoder: Encoder) throws {
+        var values = encoder.container(keyedBy: UserKeys.self)
+        try? values.encode(self.username, forKey: .username)
+        try? values.encode(self.password, forKey: .password)
+        
+    }
+
 }
 
 
