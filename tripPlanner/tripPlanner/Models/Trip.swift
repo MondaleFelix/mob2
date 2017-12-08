@@ -25,6 +25,16 @@ class Trip: Decodable {
         self.isCompleted = isCompleted
         self.userId = userId
     }
+    
+//    Maps the keys to the ones in JSON
+    enum CodingKeys: String, CodingKey {
+        case id = "_id"
+        case destination
+        case waypoints
+        case isCompleted = "is_completed"
+        case userId = "user_id"
+
+    }
 
 }
 
