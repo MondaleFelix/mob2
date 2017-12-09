@@ -36,6 +36,16 @@ class Trip: Decodable {
 
     }
 
+    required convenience init(from decoder : Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        let id = try container.decode(String.self, forKey: .id)
+        let destination = try container.decode(String.self, forKey: .destination)
+        let isCompleted = try container.decode(Bool.self, forKey: .isCompleted)
+        let userId = try container.decode(String.self, forKey: .userId)
+        let waypoints = try container.decodeIfPresent([String].self, forKey: .waypoints)
+
+        self.init(_id: id, destination: destination, waypoints: waypoints!, isCompleted: isCompleted, userId: userId)
+    }
 }
 
 
