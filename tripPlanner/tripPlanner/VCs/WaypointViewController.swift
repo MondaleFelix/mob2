@@ -14,16 +14,3 @@ class WaypointViewController: UIViewController{
     @IBOutlet weak var tableView: UITableView!
 }
 
-extension WaypointViewController: UITableViewDataSource{
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return trip.waypoints.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "WaypointCell")
-        var waypoint = trip.waypoints[indexPath.row]
-        cell?.textLabel?.text = waypoint
-        return cell!
-    }
-    
-}
