@@ -14,3 +14,10 @@ class WaypointViewController: UIViewController{
     @IBOutlet weak var tableView: UITableView!
 }
 
+extension WaypointViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return trip.waypoints.count
+    }
+    
+
+}
