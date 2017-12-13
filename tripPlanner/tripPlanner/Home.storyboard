@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5qT-Bk-Twn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5qT-Bk-Twn">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="iR1-RB-dJR">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="road" translatesAutoresizingMaskIntoConstraints="NO" id="iR1-RB-dJR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2U-SF-qgS">
                                 <rect key="frame" x="112" y="417" width="150" height="30"/>
@@ -59,7 +59,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tripific" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDf-Ls-DIU">
-                                <rect key="frame" x="86" y="194" width="145.5" height="58.5"/>
+                                <rect key="frame" x="86" y="194" width="202.5" height="73"/>
                                 <fontDescription key="fontDescription" name="Shrikhand-Regular" family="Shrikhand" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -67,12 +67,16 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="iR1-RB-dJR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EYH-jT-XGQ"/>
                             <constraint firstItem="zDf-Ls-DIU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="FXj-lc-FcB"/>
                             <constraint firstItem="iR1-RB-dJR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="HdO-d8-9mp"/>
+                            <constraint firstItem="iR1-RB-dJR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Laz-4x-h7y"/>
                             <constraint firstItem="zDf-Ls-DIU" firstAttribute="leading" secondItem="iR1-RB-dJR" secondAttribute="trailing" constant="-289" id="MX4-og-qz2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iR1-RB-dJR" secondAttribute="bottom" id="SF4-E5-9ra"/>
                             <constraint firstItem="iR1-RB-dJR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aTk-O1-BfP"/>
+                            <constraint firstItem="iR1-RB-dJR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mxv-J9-8hf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iR1-RB-dJR" secondAttribute="trailing" id="p0O-5Z-PS3"/>
+                            <constraint firstItem="iR1-RB-dJR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="wFg-93-9bY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -105,13 +109,6 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75V-Xe-8zX">
-                                                    <rect key="frame" x="339" y="0.0" width="46" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Delete">
-                                                        <color key="titleColor" red="1" green="0.36854386459999999" blue="0.30818545069999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Trip Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8d-Av-aSM">
                                                     <rect key="frame" x="25" y="12" width="42" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
