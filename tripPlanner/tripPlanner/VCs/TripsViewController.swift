@@ -50,3 +50,17 @@ class TripsViewController : UIViewController{
     }
 }
 
+extension TripsViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell : TripView = tableView.dequeueReusableCell(withIdentifier: "TripCell" ) as! TripView
+        let trip = trips[indexPath.row]
+        cell.tripLabel.text = trip.destination
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return trips.count
+    }
+}
+
+
